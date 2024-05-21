@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>로그인</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="로고" />
+      </a>
+      <ul class="gnb">
+        <li><a href="#">구독</a></li>
+        <li><a href="search.html">찾기</a></li>
+        <li><a href="#">리뷰</a></li>
+      </ul>
+      <div class="user">
+        <!--
+			<a href="login.html" class="login">
+				<span>로그인</span>
+			</a>-->
+        <a href="signin.html" class="signin">
+          <span>회원가입</span>
+        </a>
+      </div>
+    </header>
+    <!--메인 태그-->
+    <main>
+      <div class="findMain">
+        <div class="findInput">
+          <div class="back">
+            <a href="login.html">로그인 화면으로</a>
+          </div>
+          <h2>비밀번호 재설정</h2>
+          <form>
+            <input id="findEmail" type="email" class="emailInput" placeholder="이메일(example@gmail.com)" required />
+            <input id="findSubmit" type="submit" class="loginBtn" value="확인" disabled />
+          </form>
+          <p>가입하신 이메일 주소를 입력해 주시면 비밀번호 재설정 메일이 발송됩니다. 메일 확인 후 새로운 비밀번호를 설정해 주세요.</p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="ftwrap">
+        <a href="index.html" class="btlogo">
+          <img src="images/btlogo.png" alt="하단로고" />
+        </a>
+        <div class="infos">
+          <ul class="info1">
+            <li>와치맨(주) | 대표이사: 오태식</li>
+            <li>서울시 송파구 송파대로 970</li>
+            <li>사업자 등록번호: 120-99-002012</li>
+            <li>통신판매업신고: 2024-서울송파-0880</li>
+            <li><a href="#">사업자정보</a></li>
+          </ul>
+          <ul class="info2">
+            <li>고객센터: 1600-9999</li>
+            <li>대표 메일: pres@watchmen.com</li>
+            <li>제휴 문의: pres@watchmen.com</li>
+            <li>호스팅 서비스 사업자: AWS 코리아</li>
+            <li><a href="#">서비스 이용약관</a></li>
+            <li><a href="#">유료상품 이용약관</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">개인정보 처리방침</a></li>
+          </ul>
+        </div>
+        <div class="sns">
+          <a href="#"><img src="images/sns1.png" alt="sns1" /></a>
+          <a href="#"><img src="images/sns2.png" alt="sns2" /></a>
+          <a href="#"><img src="images/sns3.png" alt="sns3" /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

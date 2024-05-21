@@ -1,0 +1,220 @@
+main {
+  background: url(../images/bg.jpg) no-repeat center / cover;
+}
+
+.loginMain {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.loginInput {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  height: 400px;
+}
+.loginText {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.loginText > h2 {
+  font-size: 20px;
+}
+.loginText > a {
+  font-size: 14px;
+  text-decoration: underline;
+  padding-top: 5px;
+  color: #ccc;
+}
+.emailInput,
+.pwInput {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #ccc;
+  background-color: rgba(40, 40, 40, 0.5);
+  margin-bottom: 15px;
+  border-radius: 10px;
+  padding-left: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #eee;
+}
+.emailInput:placeholder-shown,
+.pwInput:placeholder-shown {
+  background-color: transparent;
+}
+.loginBtn {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #e41d12;
+  font-family: Pretendard;
+  font-size: 15px;
+  font-weight: 700;
+  border: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.loginBtn:disabled {
+  background-color: #505155;
+  cursor: no-drop;
+}
+
+.loginInput > span,
+.signinInput > span {
+  font-size: 14px;
+  margin-top: 40px;
+  color: #aeaeae;
+}
+
+.loginError {
+  color: #e41d12;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 10px;
+  display: none;
+}
+
+.snsLogin {
+  margin: 20px 3px 0 3px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*signin.html에 대한 부분*/
+.nameInput {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #ccc;
+  background-color: rgba(40, 40, 40, 0.5);
+  margin-bottom: 15px;
+  border-radius: 10px;
+  padding-left: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #eee;
+}
+
+.signinMain {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.signinInput {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  height: 700px;
+  margin-top: 100px;
+}
+.signinText {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.errorText {
+  color: #e41d12;
+  margin: -5px 0 10px 3px;
+  font-weight: 300;
+  display: none;
+}
+
+/*체크박스*/
+
+.terms > li {
+  color: #999;
+  font-size: 14px;
+  height: 30px;
+}
+input[type='checkbox'] {
+  display: none;
+}
+.checkbox_label {
+  display: flex;
+  align-items: center;
+}
+.checkbox_icon::before {
+  content: '';
+  margin-right: 5px;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  border: 1px solid #9da3a5;
+  border-radius: 2px;
+  box-sizing: border-box;
+  position: relative;
+  cursor: pointer;
+}
+.checkbox_label input:checked + .checkbox_icon::before {
+  background: url(https://intranet.adef.co.kr/asset/images/ic_check.png) #323232 no-repeat center;
+  border: none;
+}
+.checkbox_text {
+  margin-left: 5px;
+}
+.readTerms > a {
+  margin-left: 10px;
+  color: #aaa;
+  text-decoration: underline;
+}
+
+/*비밀번호 찾기*/
+.findMain {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: relative;
+}
+.findInput {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  height: 400px;
+}
+.findInput > h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.findInput > p {
+  font-size: 14px;
+  color: #aaaaaa;
+  padding: 10px;
+  text-align: left;
+}
+.back {
+  margin-bottom: 20px;
+}
+.back a {
+  color: #aaa;
+}
+.back a::before {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  content: '';
+  margin-right: 4px;
+  position: relative;
+  top: 5px;
+  background: url(../images/backIcon.png) no-repeat center / cover;
+}
+
+/*테스트버튼*/
+.testButton {
+  position: fixed;
+  width: 100px;
+  height: 50px;
+  background-color: #fff;
+  color: black;
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>회원가입</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="로고" />
+      </a>
+      <ul class="gnb">
+        <li><a href="#">구독</a></li>
+        <li><a href="search.html">찾기</a></li>
+        <li><a href="#">리뷰</a></li>
+      </ul>
+      <div class="user">
+        <a href="login.html" class="login">
+          <span>로그인</span>
+        </a>
+        <!--
+			<a href="signin.html" class="signin">
+				<span>회원가입</span>
+			</a>
+			-->
+      </div>
+    </header>
+
+    <!--메인 영역-->
+    <main>
+      <div class="signinMain">
+        <div class="signinInput">
+          <h2 class="signinText">회원가입</h2>
+          <form>
+            <input id="name" type="text" class="nameInput" placeholder="이름(2자 이상)" onkeyup="validateName() ; btnOnOff()" />
+            <p class="errorText">이름은 최소 2자 이상이어야 합니다.</p>
+            <input
+              id="email"
+              type="email"
+              class="emailInput"
+              placeholder="이메일(example@gmail.com)"
+              onkeyup="validateEmail() ; btnOnOff()"
+            />
+            <p class="errorText">올바른 이메일 형식이 아닙니다.</p>
+            <input id="PW" type="password" class="pwInput" placeholder="비밀번호" maxlength="15" onkeyup="validatePW() ; btnOnOff()" />
+            <p class="errorText">영문, 숫자, 특수문자 (~!@#$%^&amp;*) 조합 8~15자리로 입력해주세요.</p>
+
+            <ul class="terms">
+              <li>
+                <label class="checkbox_label" onclick="checkboxVal() ; btnOnOff()">
+                  <input type="checkbox" name="term" onclick="selectAll(this)" />
+                  <span class="checkbox_icon"></span>
+                  <span class="checkbox_text">전체 약관에 동의합니다.</span>
+                </label>
+              </li>
+              <li>
+                <label class="checkbox_label" onclick="checkboxVal() ; btnOnOff()">
+                  <input type="checkbox" name="term" />
+                  <span class="checkbox_icon"></span>
+                  <span class="checkbox_text">만 14세 이상입니다.</span>
+                </label>
+              </li>
+              <li>
+                <label class="checkbox_label" onclick="checkboxVal() ; btnOnOff()">
+                  <input type="checkbox" name="term" />
+                  <span class="checkbox_icon"></span>
+                  <span class="checkbox_text">(필수)서비스 이용 약관</span>
+                  <span class="readTerms"><a href="#">보기</a></span>
+                </label>
+              </li>
+              <li>
+                <label class="checkbox_label" onclick="checkboxVal() ; btnOnOff()">
+                  <input type="checkbox" name="term" />
+                  <span class="checkbox_icon"></span>
+                  <span class="checkbox_text">(필수)개인정보 수집 및 이용 동의</span>
+                  <span class="readTerms"><a href="#">보기</a></span>
+                </label>
+              </li>
+              <li>
+                <label class="checkbox_label" onclick="checkboxVal() ; btnOnOff()">
+                  <input type="checkbox" name="term" />
+                  <span class="checkbox_icon"></span>
+                  <span class="checkbox_text">(선택)마케팅 이벤트 정보 수신</span>
+                  <span class="readTerms"><a href="#">보기</a></span>
+                </label>
+              </li>
+            </ul>
+            <input id="signinBtn" type="submit" class="loginBtn" value="회원가입" disabled />
+          </form>
+          <span>sns 계정으로 회원가입하기</span>
+          <ul class="snsLogin">
+            <li>
+              <a href="#"><img src="images/snsLogin1.png" alt="sns로그인1" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/snsLogin2.png" alt="sns로그인2" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/snsLogin3.png" alt="sns로그인3" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/snsLogin4.png" alt="sns로그인4" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/snsLogin5.png" alt="sns로그인5" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="ftwrap">
+        <a href="index.html" class="btlogo">
+          <img src="images/btlogo.png" alt="하단로고" />
+        </a>
+        <div class="infos">
+          <ul class="info1">
+            <li>와치맨(주) | 대표이사: 오태식</li>
+            <li>서울시 송파구 송파대로 970</li>
+            <li>사업자 등록번호: 120-99-002012</li>
+            <li>통신판매업신고: 2024-서울송파-0880</li>
+            <li><a href="#">사업자정보</a></li>
+          </ul>
+          <ul class="info2">
+            <li>고객센터: 1600-9999</li>
+            <li>대표 메일: pres@watchmen.com</li>
+            <li>제휴 문의: pres@watchmen.com</li>
+            <li>호스팅 서비스 사업자: AWS 코리아</li>
+            <li><a href="#">서비스 이용약관</a></li>
+            <li><a href="#">유료상품 이용약관</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">개인정보 처리방침</a></li>
+          </ul>
+        </div>
+        <div class="sns">
+          <a href="#"><img src="images/sns1.png" alt="sns1" /></a>
+          <a href="#"><img src="images/sns2.png" alt="sns2" /></a>
+          <a href="#"><img src="images/sns3.png" alt="sns3" /></a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/login.js"></script>
+  </body>
+</html>

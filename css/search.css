@@ -1,0 +1,123 @@
+.gnb > li:nth-child(2) > a {
+	color: #fff;
+}
+
+/*검색바*/
+
+.searchBar {
+	margin-top: 15px;
+	position: relative;
+}
+.search {
+	width: 350px;
+	height: 35px;
+	background: #222326;
+	padding-left: 35px;
+	font-size: 16px;
+	font-family: Pretendard, sans-serif;
+	border-radius: 8px;
+	border: none;
+	margin-left: 40px;
+	color: #fff;
+}
+.search:hover {
+	background: #323336;
+}
+.searchIcon {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-indent: -9999px;
+	background: url(../images/search.png) no-repeat center;
+	position: absolute;
+	top: 2px;
+	left: 43px;
+}
+.search_reset {
+	width: 30px;
+	height: 30px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-indent: -9999px;
+	background: url(../images/reset.png) no-repeat center;
+	position: absolute;
+	top: 2px;
+	left: 350px;
+	cursor: pointer;
+}
+
+/*영화 리스트*/
+section > div {
+	margin: 30px 0 0 40px;
+}
+section > div > p {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+.popMovieList, .genreMovieList {
+	white-space: nowrap;
+}
+.popMovieList > li, .genreMovieList > li  {
+	display: inline-block;
+	position: relative;
+	margin-right: 12px;
+}
+.popMovieList > li > a {
+	width: 215px;
+	height: 215px;
+}
+.popMovieList > li > a > span {
+	font-size: 25px;
+	font-weight: bold;
+	position: absolute;
+	bottom: 12px;
+	left: 18px;
+}
+
+/*장르별*/
+.genreMovieList > li > a {
+	width: 275px;
+	height: 155px;
+}
+.genreMovieList > li > a > span {
+	font-size: 16px;
+	font-weight: bold;
+	position: absolute;
+	top: 12px;
+	left: 18px;
+}
+.genreMovie:last-child {
+	margin-bottom: 50px;
+}
+
+/*검색결과*/
+
+.resultList > li > a > img {
+	width: 200px;
+	height: 280px;
+	border-radius: 8px;
+}
+.resultList > li {
+	display: inline-block;
+	margin-right: 12px;
+	transition: all 0.2s;
+}
+.resultList > li:hover {
+	transform: translateY(-8px);
+	filter: opacity(0.6);
+}
+
+/*검색결과 없음*/
+.errorImage {
+	width: 100%;
+	height: 400px;
+	background: url(../images/error.png) no-repeat center;
+}
+.errorImage span {
+	position: relative;
+	top: 10px;
+	left: 10px;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<title>WAtchmen 와치맨</title>
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="css/search.css" />
+	<script src="js/jquery-1.12.3.js"></script>
+	<script src="js/main.js"></script>
+</head>
+
+<body>
+	<header>
+		<a href="index.html" class="logo">
+			<img src="images/logo.png" alt="로고" />
+		</a>
+		<ul class="gnb">
+			<li><a href="#">구독</a></li>
+			<li><a href="search.html">찾기</a></li>
+			<li><a href="#">리뷰</a></li>
+		</ul>
+		<div class="user">
+			<a href="login.html" class="login">
+				<span>로그인</span>
+			</a>
+			<a href="signin.html" class="signin">
+				<span>회원가입</span>
+			</a>
+		</div>
+	</header>
+	
+	<main>
+		<div class="searchBar">
+			<form>
+				<input hidden="hidden"/>
+				<input id="search" name="search" class="search" type="text"
+				placeholder="제목, 태그, 인물, 리스트 검색" onkeypress="enter(event)" />
+			</form>
+			<span class="searchIcon">찾기아이콘</span>
+			<div class="search_reset" onclick="reset()">지우기</div>
+		</div>
+		<section>
+			<div class="searchResult">
+				<p>검색결과</p>
+				<div class="errorImage">
+					<span>찾으시는 결과가 없습니다.</span>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="searchResult">
+				<p>비슷한 검색결과</p>
+				<ul class="resultList">
+					<li><a href="#"><img src="images/movie1.jpg" alt="결과1"></a></li>
+					<li><a href="#"><img src="images/movie1.jpg" alt="결과2"></a></li>
+					<li><a href="#"><img src="images/movie1.jpg" alt="결과3"></a></li>
+					<li><a href="#"><img src="images/movie1.jpg" alt="결과4"></a></li>
+					<li><a href="#"><img src="images/movie1.jpg" alt="결과5"></a></li>
+				</ul>
+			</div>
+		</section>
+	</main>
+	
+	
+	<footer>
+	<div class="ftwrap">
+		<a href="index.html" class="btlogo">
+			<img src="images/btlogo.png" alt="하단로고" />
+		</a>
+		<div class="infos">
+			<ul class="info1">
+				<li>와치맨(주) | 대표이사: 오태식</li>
+				<li>서울시 송파구 송파대로 970</li>
+				<li>사업자 등록번호: 120-99-002012</li>
+				<li>통신판매업신고: 2024-서울송파-0880</li>
+				<li><a href="#">사업자정보</a></li>
+			</ul>
+			<ul class="info2">
+				<li>고객센터: 1600-9999</li>
+				<li>대표 메일: pres@watchmen.com</li>
+				<li>제휴 문의: pres@watchmen.com</li>
+				<li>호스팅 서비스 사업자: AWS 코리아</li>
+				<li><a href="#">서비스 이용약관</a></li>
+				<li><a href="#">유료상품 이용약관</a></li>
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">개인정보 처리방침</a></li>
+			</ul>
+		</div>
+		<div class="sns">
+			<a href="#"><img src="images/sns1.png" alt="sns1"/></a>
+			<a href="#"><img src="images/sns2.png" alt="sns2"/></a>
+			<a href="#"><img src="images/sns3.png" alt="sns3"/></a>
+		</div>
+	</div>	
+	</footer>
+</body>
+</html>
