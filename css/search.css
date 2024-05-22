@@ -1,123 +1,310 @@
 .gnb > li:nth-child(2) > a {
-	color: #fff;
+  color: #fff;
 }
 
 /*검색바*/
 
 .searchBar {
-	margin-top: 15px;
-	position: relative;
+  margin-top: 15px;
+  position: relative;
 }
 .search {
-	width: 350px;
-	height: 35px;
-	background: #222326;
-	padding-left: 35px;
-	font-size: 16px;
-	font-family: Pretendard, sans-serif;
-	border-radius: 8px;
-	border: none;
-	margin-left: 40px;
-	color: #fff;
+  width: 350px;
+  height: 35px;
+  background: #222326;
+  padding-left: 35px;
+  font-size: 16px;
+  font-family: Pretendard, sans-serif;
+  border-radius: 8px;
+  border: none;
+  margin-left: 40px;
+  color: #fff;
 }
 .search:hover {
-	background: #323336;
+  background: #323336;
 }
 .searchIcon {
-	display: inline-block;
-	width: 30px;
-	height: 30px;
-	white-space: nowrap;
-	overflow: hidden;
-	text-indent: -9999px;
-	background: url(../images/search.png) no-repeat center;
-	position: absolute;
-	top: 2px;
-	left: 43px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-indent: -9999px;
+  background: url(../images/search.png) no-repeat center;
+  position: absolute;
+  top: 2px;
+  left: 43px;
 }
 .search_reset {
-	width: 30px;
-	height: 30px;
-	white-space: nowrap;
-	overflow: hidden;
-	text-indent: -9999px;
-	background: url(../images/reset.png) no-repeat center;
-	position: absolute;
-	top: 2px;
-	left: 350px;
-	cursor: pointer;
+  width: 30px;
+  height: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-indent: -9999px;
+  background: url(../images/reset.png) no-repeat center;
+  position: absolute;
+  top: 2px;
+  left: 350px;
+  cursor: pointer;
 }
 
 /*영화 리스트*/
 section > div {
-	margin: 30px 0 0 40px;
+  margin: 30px 0 0 40px;
 }
 section > div > p {
-	font-size: 20px;
-	font-weight: bold;
-	margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
-.popMovieList, .genreMovieList {
-	white-space: nowrap;
+.popMovieList,
+.genreMovieList {
+  white-space: nowrap;
 }
-.popMovieList > li, .genreMovieList > li  {
-	display: inline-block;
-	position: relative;
-	margin-right: 12px;
+.popMovieList > li,
+.genreMovieList > li {
+  display: inline-block;
+  position: relative;
+  margin-right: 12px;
 }
 .popMovieList > li > a {
-	width: 215px;
-	height: 215px;
+  width: 215px;
+  height: 215px;
 }
 .popMovieList > li > a > span {
-	font-size: 25px;
-	font-weight: bold;
-	position: absolute;
-	bottom: 12px;
-	left: 18px;
+  font-size: 25px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 12px;
+  left: 18px;
 }
 
 /*장르별*/
 .genreMovieList > li > a {
-	width: 275px;
-	height: 155px;
+  width: 275px;
+  height: 155px;
 }
 .genreMovieList > li > a > span {
-	font-size: 16px;
-	font-weight: bold;
-	position: absolute;
-	top: 12px;
-	left: 18px;
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  top: 12px;
+  left: 18px;
 }
 .genreMovie:last-child {
-	margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 /*검색결과*/
 
 .resultList > li > a > img {
-	width: 200px;
-	height: 280px;
-	border-radius: 8px;
+  width: 200px;
+  height: 280px;
+  border-radius: 8px;
 }
 .resultList > li {
-	display: inline-block;
-	margin-right: 12px;
-	transition: all 0.2s;
+  display: inline-block;
+  margin-right: 12px;
+  transition: all 0.2s;
 }
 .resultList > li:hover {
-	transform: translateY(-8px);
-	filter: opacity(0.6);
+  transform: translateY(-8px);
+  filter: opacity(0.6);
 }
 
 /*검색결과 없음*/
 .errorImage {
-	width: 100%;
-	height: 400px;
-	background: url(../images/error.png) no-repeat center;
+  width: 100%;
+  height: 400px;
+  background: url(../images/error.png) no-repeat center;
 }
 .errorImage span {
-	position: relative;
-	top: 10px;
-	left: 10px;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+/*영화 상세 페이지*/
+.movieMain {
+  width: 95%;
+  height: 450px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.movieDes {
+  width: 750px;
+  height: auto;
+}
+.movieDes {
+  padding: 130px 0 0 130px;
+}
+.movieName {
+  font-size: 40px;
+}
+
+.movieTag {
+  margin-top: 10px;
+}
+
+.movieTag > li {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 200;
+}
+
+.movieTag > li::after {
+  content: '·';
+  margin-left: 3px;
+}
+
+.movieTag > li:last-child:after {
+  content: '';
+}
+
+.rate::before {
+  content: '';
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background: url(../images/rate.png) no-repeat center;
+  position: relative;
+  top: 2px;
+}
+
+.moviePos {
+  width: 750px;
+  height: 450px;
+  background-image: url(../images/post.jpg);
+  background-size: 750px 450px;
+}
+
+.movieDes > p {
+  width: 430px;
+  color: #929292;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 23px;
+}
+
+.btns {
+  width: 180px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.playBtn {
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #e41d12;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 3px;
+}
+.playBtn:hover {
+  filter: brightness(1.2);
+}
+.like {
+  width: 34px;
+  height: 34px;
+  background: url(../images/like.png) no-repeat center;
+}
+.like:hover {
+  filter: brightness(1.2);
+}
+.writeReview {
+  width: 34px;
+  height: 34px;
+  background: url(../images/review.png) no-repeat center;
+}
+.writeReview:hover {
+  filter: brightness(1.2);
+}
+
+.board {
+  width: 1100px;
+  height: 600px;
+  margin-left: 170px;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.tabMenu {
+  width: 360px;
+  height: 50px;
+  display: flex;
+}
+.tabMenu > li > a {
+  display: inline-block;
+  width: 120px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+.tabMenu > li:first-child > a {
+  border-bottom: 2px solid #e41d12;
+}
+
+.contentsInfo {
+  width: 1100px;
+  height: 550px;
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+.review {
+  width: 1100px;
+  height: 450px;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  display: none;
+}
+.relContents {
+  width: 1100px;
+  height: 450px;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  display: none;
+}
+
+.contentsInfo > h4 {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.infoList {
+  display: flex;
+  justify-content: space-around;
+}
+.infoList > li > a > img {
+  width: 350px;
+  height: 250px;
+}
+
+.casts {
+  width: 350px;
+  height: 120px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.casts > li > a > img {
+  width: 62px;
+  height: 62px;
+  border-radius: 30px;
+}
+.char {
+  text-align: center;
+}
+.actor {
+  text-align: center;
+  font-size: 12px;
+  color: #ccc;
 }

@@ -2,65 +2,61 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <title>로그인</title>
+    <title>WAtchmen 와치맨</title>
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/plan.css" />
+    <script src="js/main.js"></script>
   </head>
   <body>
     <header>
       <a href="index.html" class="logo">
         <img src="images/logo.png" alt="로고" />
       </a>
-      <!--
-		<ul class="gnb">
-			<li><a href="plan.html">구독</a></li>
-			<li><a href="search.html">찾기</a></li>
-			<li><a href="#">리뷰</a></li>
-		</ul>
-		-->
+      <ul class="gnb">
+        <li><a href="#">구독</a></li>
+        <li><a href="search.html">찾기</a></li>
+        <li><a href="#">리뷰</a></li>
+      </ul>
       <div class="user">
-        <!--
-			<a href="login.html" class="login">
-				<span>로그인</span>
-			</a>-->
+        <a href="login.html" class="login">
+          <span>로그인</span>
+        </a>
         <a href="signin.html" class="signin">
           <span>회원가입</span>
         </a>
       </div>
     </header>
-    <!--메인 태그-->
     <main>
-      <div class="loginMain">
-        <div class="loginInput">
-          <div class="loginText">
-            <h2>로그인</h2>
-            <a href="find.html">비밀번호찾기</a>
+      <div class="plan">
+        <div class="planBox premium select" id="premium">
+          <div class="planName">
+            <h3>프리미엄 플랜</h3>
+            <p class="best">추천</p>
           </div>
-          <form>
-            <input id="loginEmail" type="email" class="emailInput" placeholder="이메일(example@gmail.com)" required />
-            <input id="loginPW" type="password" class="pwInput" placeholder="비밀번호" required />
-            <p class="loginError">이메일 주소 또는 비밀번호를 확인해주세요</p>
-            <input id="loginBtn" type="submit" class="loginBtn" value="로그인" disabled />
-          </form>
-          <span>sns 계정으로 로그인하기</span>
-          <ul class="snsLogin">
-            <li>
-              <a href="#"><img src="images/snsLogin1.png" alt="sns로그인1" /></a>
-            </li>
-            <li>
-              <a href="#"><img src="images/snsLogin2.png" alt="sns로그인2" /></a>
-            </li>
-            <li>
-              <a href="#"><img src="images/snsLogin3.png" alt="sns로그인3" /></a>
-            </li>
-            <li>
-              <a href="#"><img src="images/snsLogin4.png" alt="sns로그인4" /></a>
-            </li>
-            <li>
-              <a href="#"><img src="images/snsLogin5.png" alt="sns로그인5" /></a>
-            </li>
+          <p class="price">월 12,900원</p>
+          <h4>혜택</h4>
+          <ul>
+            <li>최대 4대 동시 감상</li>
+            <li>4K 화질 지원</li>
+            <li>PC, 모바일, 태블릿, TV 지원</li>
+            <li>비디오 100개 저장</li>
           </ul>
         </div>
+        <div class="planBox basic" id="basic">
+          <div class="planName">
+            <h3>베이직 플랜</h3>
+            <p class="best">추천</p>
+          </div>
+          <p class="price">월 9,900원</p>
+          <h4>혜택</h4>
+          <ul>
+            <li>최대 1대 동시 감상</li>
+            <li>FHD 화질 지원</li>
+            <li>PC, 모바일 지원</li>
+            <li>비디오 10개 저장</li>
+          </ul>
+        </div>
+        <input type="button" class="planBtn" value="구독하기" />
       </div>
     </main>
     <footer>
@@ -92,9 +88,11 @@
           <a href="#"><img src="images/sns2.png" alt="sns2" /></a>
           <a href="#"><img src="images/sns3.png" alt="sns3" /></a>
         </div>
+        <div class="htheight">
+          <p></p>
+        </div>
       </div>
     </footer>
-
-    <script src="js/login.js"></script>
+    <script src="js/plan.js"></script>
   </body>
 </html>
